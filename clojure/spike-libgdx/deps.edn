@@ -1,0 +1,29 @@
+{:paths ["src" "classes"]
+ :deps {
+   org.clojure/clojure {:mvn/version "1.10.1"}
+   com.badlogicgames.gdx/gdx {:mvn/version "1.9.10"}
+   com.badlogicgames.gdx/gdx-backend-lwjgl {:mvn/version "1.9.10"}
+   com.badlogicgames.gdx/gdx-platform$natives-desktop {:mvn/version "1.9.10"}
+ }
+
+  ;; Aliases
+	;;   resolve-deps aliases (-R) affect dependency resolution, options:
+	;;     :extra-deps - specifies extra deps to add to :deps
+	;;     :override-deps - specifies a coordinate to use instead of that in :deps
+	;;     :default-deps - specifies a coordinate to use for a lib if one isn't found
+	;;   make-classpath aliases (-C) affect the classpath generation, options:
+	;;     :extra-paths - vector of additional paths to add to the classpath
+	;;     :classpath-overrides - map of lib to path that overrides the result of resolving deps
+
+  ;; :aliases {
+  ;;   :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.7.541"}}}
+  ;;   :test {:extra-paths ["test"]}
+  ;; }
+
+  ;; Provider attributes
+
+  ;; :mvn/repos {
+  ;;   "central" {:url "https://repo1.maven.org/maven2/"}
+  ;;   "clojars" {:url "https://repo.clojars.org/"}
+  ;; }
+}
